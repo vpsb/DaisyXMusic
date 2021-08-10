@@ -1,20 +1,3 @@
-# Daisyxmusic (Telegram bot project)
-# Copyright (C) 2021  Inukaasith
-# Copyright (C) 2021  TheHamkerCat (Python_ARQ)
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License as
-# published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Affero General Public License for more details.
-#
-# You should have received a copy of the GNU Affero General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-
 import json
 import os
 from os import path
@@ -32,30 +15,30 @@ from pyrogram.types import Voice
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
-from DaisyXMusic.modules.play import generate_cover
-from DaisyXMusic.modules.play import arq
-from DaisyXMusic.modules.play import cb_admin_check
-from DaisyXMusic.modules.play import transcode
-from DaisyXMusic.modules.play import convert_seconds
-from DaisyXMusic.modules.play import time_to_seconds
-from DaisyXMusic.modules.play import changeImageSize
-from DaisyXMusic.config import BOT_NAME as bn
-from DaisyXMusic.config import DURATION_LIMIT
-from DaisyXMusic.config import UPDATES_CHANNEL as updateschannel
-from DaisyXMusic.config import que
-from DaisyXMusic.function.admins import admins as a
-from DaisyXMusic.helpers.errors import DurationLimitError
-from DaisyXMusic.helpers.decorators import errors
-from DaisyXMusic.helpers.admins import get_administrators
-from DaisyXMusic.helpers.channelmusic import get_chat_id
-from DaisyXMusic.helpers.decorators import authorized_users_only
-from DaisyXMusic.helpers.filters import command, other_filters
-from DaisyXMusic.helpers.gets import get_file_name
-from DaisyXMusic.services.callsmusic import callsmusic
-from DaisyXMusic.services.callsmusic.callsmusic import client as USER
-from DaisyXMusic.services.converter.converter import convert
-from DaisyXMusic.services.downloaders import youtube
-from DaisyXMusic.services.queues import queues
+from YuiHirasawaMusicBot.modules.play import generate_cover
+from YuiHirasawaMusicBot.modules.play import arq
+from YuiHirasawaMusicBot.modules.play import cb_admin_check
+from YuiHirasawaMusicBot.modules.play import transcode
+from YuiHirasawaMusicBot.modules.play import convert_seconds
+from YuiHirasawaMusicBot.modules.play import time_to_seconds
+from YuiHirasawaMusicBot.modules.play import changeImageSize
+from YuiHirasawaMusicBot.config import BOT_NAME as bn
+from YuiHirasawaMusicBot.config import DURATION_LIMIT
+from YuiHirasawaMusicBot.config import UPDATES_CHANNEL as updateschannel
+from YuiHirasawaMusicBot.config import que
+from YuiHirasawaMusicBot.function.admins import admins as a
+from YuiHirasawaMusicBot.helpers.errors import DurationLimitError
+from YuiHirasawaMusicBot.helpers.decorators import errors
+from YuiHirasawaMusicBot.helpers.admins import get_administrators
+from YuiHirasawaMusicBot.helpers.channelmusic import get_chat_id
+from YuiHirasawaMusicBot.helpers.decorators import authorized_users_only
+from YuiHirasawaMusicBot.helpers.filters import command, other_filters
+from YuiHirasawaMusicBot.helpers.gets import get_file_name
+from YuiHirasawaMusicBot.services.callsmusic import callsmusic
+from YuiHirasawaMusicBot.services.callsmusic.callsmusic import client as USER
+from YuiHirasawaMusicBot.services.converter.converter import convert
+from YuiHirasawaMusicBot.services.downloaders import youtube
+from YuiHirasawaMusicBot.services.queues import queues
 
 chat_id = None
 
